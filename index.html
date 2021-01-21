@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFOS</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" id="theme" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body id="ctn-body">
+
+
+    <header>
+        <div class="container-90">
+            <nav class="navigation-bar">
+                <a href="index.html"><img src="assets/logo-desktop.svg" alt="Logo" id="logo" title="Home Page"></a>
+                <i class="mobile-menu fas fa-bars" id="toggle" title="Menu"></i>
+                <ul class="sections">
+                    <li><a href="#" id="switchTheme" title="Choose preference">Modo Nocturno</a>
+                        <span class="underline"></span>
+                    </li>
+
+                    <li><a href="favoritos.html" title="View liked giphys">Favoritos</a>
+                        <span class="underline"></span>
+                    </li>
+                    <li><a href="misGifos.html" title="Check your own galery!">Mis Gifos</a>
+                        <span class="underline"></span>
+                    </li>
+                    <li>
+                        <a href="create.html" id="create" title="Go create a giphy!"><img src="assets/button-crear-gifo.svg" onmouseover="this.src='assets/CTA-crear-gifo-hover.svg'" onmouseout="this.src='assets/button-crear-gifo.svg'" alt="Create Gif"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="search">
+            <div id="search" class="container-80">
+                <h1>Inspírate, busca, guarda, y crea <br> los mejores<span> GIFOS</span></h1>
+                <img src="assets/ilustra_header.svg" alt="Ilustrative header">
+            </div>
+            <div class="container-90">
+                <fieldset id="ctn-box">
+                    <form id="search-form" action="search">
+                        <input type="search" id="search-input" placeholder="Busca GIFOS y más" autocomplete="off">
+                        <button id="searchIcon" type="submit"><i class="fas fa-search"></i></button>
+                        <ul class="suggestion" id="box-search">
+                            <!--Suggestions box-->
+                        </ul>
+                    </form>
+                </fieldset>
+                <div class="container-90">
+                    <div class="input-value" id="input-value"></div>
+                    <div class="results resultsElements" id="results">
+                        <!--GIFOS here-->
+                    </div>
+                </div>
+                <div id="btn-pager">
+                    <!--Pager Buttons-->
+                </div>
+            </div>
+
+            <div class="container-80 trending" id="trendings">
+                <h3>Trending:</h3>
+                <!--<p>Reactions, Entertainment, Sports, Stickers, Artists</p>-->
+            </div>
+        </section>
+    </main>
+
+    <section class="bg-daylight-dark">
+        <div class="container-90 main-trendings">
+            <h2>Trending GIFOS</h2>
+            <p>Mira los últimos <br>GIFOS de nuestra comunidad.</p>
+        </div>
+
+        <div class="ctn-sliders">
+            <button id="left-arrow" class="left-arrow"><i class="fas fa-angle-left"></i></button>
+
+            <div class="container-90 ctn-carousel">
+                <div class="carousel" id="carousel">
+                    <!--carousel of images-->
+                </div>
+            </div>
+
+            <button id="right-arrow" class="right-arrow"><i class="fas fa-angle-right"></i></button>
+        </div>
+
+    </section>
+
+    <!--MODAL-->
+    <div class="ctn-modal-global">
+
+        <div class="ctn-sliders-modal">
+            <div class="exit-modal"><i class="fas fa-times"></i></div>
+            <div class="ctn-modal">
+                <div class="ctn-sliders">
+                    <button id="modal-left-arrow" class="left-arrow"><i class="fas fa-angle-left"></i></button>
+                    <div class="img-modal">
+                        <img src="https://via.placeholder.com/350" alt="place holder">
+                    </div>
+                    <div class="modal-description">
+                        <p id="title"></p>
+                    </div>
+                    <div class="modal-buttons">
+                        <ul class="modal-ul">
+                            <!--modalButtons-->
+                        </ul>
+                    </div>
+                    <button id="modal-right-arrow" class="right-arrow"><i class="fas fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Alerta-->
+    <div class="global-ctn-alert">
+        <div class="alert"></div>
+    </div>
+
+    <footer>
+        <div class="container-90 site-footer ">
+            <div class="social-media ">
+                <nav>
+                    <p>Compartir en: </p>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </nav>
+            </div>
+            <div class="copyright ">
+                <p>&copy; GIFOS 2020 All Rights Reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.6.1/RecordRTC.min.js" integrity="sha512-JdnCTTJRivaH4nStpZnsHO5Fm6TmgWHwwyPfhTPMgHGOz4GRzynCnm1T28C7Ees55ERL+t+gqg/DQro9oROd0w==" crossorigin="anonymous"></script>
+</body>
+
+</html>
