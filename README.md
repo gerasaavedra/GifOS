@@ -7,6 +7,7 @@
 
 * HTML5
 * CSS3
+* JavaScript
 * Google Fonts
 * FontAwesome
 * [API giphy](https://developers.giphy.com/)
