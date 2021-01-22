@@ -164,10 +164,16 @@ if (suggestion) {
     suggestion.addEventListener('click', e => {
         e.stopPropagation();
         const selectedTerm = e.target.textContent;
-        inputValue = selectedTerm;
         searchInput.value = selectedTerm;
         searchGifos();
         boxSearch_hidden();
+        
+        while (inputValue.firstChild) {
+            inputValue.removeChild(inputValue.firstChild);
+        };
+
+        inputValue.innerHTML = `<span class="divider"></span>
+                                    <h2>${selectedTerm}</h2>`;
     });
 };
 
