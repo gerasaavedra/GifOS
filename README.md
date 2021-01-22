@@ -11,6 +11,7 @@
 * Google Fonts
 * FontAwesome
 * [API giphy](https://developers.giphy.com/)
+* localStorage: para almacenar gifs
 * Librería [RecordRTC](https://recordrtc.org/)
 * navigator.mediaDevices.getUserMedia
 * Paginación: utilizando los recursos que ofrece la API de Giphy
